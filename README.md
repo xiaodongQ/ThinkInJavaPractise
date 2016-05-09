@@ -2,4 +2,4 @@
 
 ***
 
-**a repository to practise about Java (The Book ThinkinJava)**
+**a repository to practise about Java (The Book ThinkInJava)**

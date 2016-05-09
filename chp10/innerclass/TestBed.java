@@ -1,3 +1,5 @@
+package chp10.innerclass;
+
 public class TestBed {
     public void f() {
         System.out.println("f()");
