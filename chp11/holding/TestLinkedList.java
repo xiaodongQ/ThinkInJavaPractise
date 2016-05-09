@@ -18,5 +18,6 @@ public class TestLinkedList {
 			lit.set(i);
 			print(linkInts);
 		}
+		print("hello");
 	}
 }
