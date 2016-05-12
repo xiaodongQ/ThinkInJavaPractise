@@ -16,6 +16,8 @@ public class Sequence {
 	public void add(Object x) {
 		if(next < items.length) {
 			items[next++] = x;
+		} else {
+			throw new IndexOutOfBoundsException("no avaliable space");
 		}
 	}
 	private class SequenceSelector implements Selector {
@@ -79,13 +81,19 @@ public class Sequence {
 		print("show()");
 	}
 	public static void main(String[] args) {
-		Sequence sequence = new Sequence(10);
+		Sequence sequence = new Sequence(8);
 		for(int i=0; i<5; i++) {
 			sequence.add(Integer.toString(i));
 		}
 		for(int i=0; i<3; i++)
 		{
 			sequence.add(sequence.new NewClass());	// .new语法
+		}
+		try {
+			sequence.add(Integer.toString(9));
+		} catch(IndexOutOfBoundsException e) {
+//			e.printStackTrace();
+			print(e);
 		}
 		Selector selector = sequence.selector();
 		while(!selector.end()) {
