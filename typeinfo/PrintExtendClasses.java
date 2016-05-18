@@ -20,6 +20,8 @@ public class PrintExtendClasses {
 	public static void isArrayObject() {
 		char[] chs = {'a', 'b', 'c'};
 		System.out.println(chs instanceof Object);
+		System.out.println(chs.getClass().getSimpleName());
+		System.out.println(chs.getClass().getCanonicalName());
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
