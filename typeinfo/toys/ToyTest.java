@@ -1,5 +1,6 @@
 package typeinfo.toys;
 import static myutil.Print.*;
+import java.lang.reflect.*;
 
 interface HasBatteries {}
 interface Waterproof {}
@@ -44,6 +45,7 @@ public class ToyTest {
 		try {
 			// 使用newInstance()来创建的类必须带有默认的构造器
 			obj = up.newInstance();
+			
 		} catch(InstantiationException e) {
 			print("Can't instantiate");
 			System.exit(1);
@@ -51,7 +53,6 @@ public class ToyTest {
 			print("Can't access");
 			System.exit(1);
 		}
-		printInfo(obj.getClass());
 	}
 
 }

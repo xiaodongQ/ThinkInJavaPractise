@@ -20,5 +20,4 @@ public class LiteralPetCreator extends PetCreator {
 	public static void main(String[] args) {
 		System.out.println(types);
 	}
-
 }
