@@ -1,6 +1,5 @@
 package myutil;
 
-import javax.management.RuntimeErrorException;
 
 public class BasicGenerator<T> implements Generator<T> {
 	private Class<T> type;
