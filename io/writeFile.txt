@@ -1,0 +1,25 @@
+1: package io;
+2: import java.io.*;
+3: 
+4: public class TestWriteFile {
+5: 	static String newfilename = "io/writeFile.txt";
+6: 	public static void main(String[] args) throws IOException {
+7: 		// TODO Auto-generated method stub
+8: //		File file = new File(newfilename);
+9: //		if(!file.exists()) {
+10: //			file.createNewFile();
+11: //		}
+12: 		BufferedReader in = new BufferedReader(
+13: 				new StringReader(
+14: 						BufferedInputFile.read("io/TestWriteFile.java")));
+15: 		PrintWriter out = new PrintWriter(newfilename);
+16: 		int lineCount = 0;
+17: 		String s;
+18: 		while((s = in.readLine()) != null) {
+19: 			out.println(++lineCount + ": " + s);
+20: 		}
+21: 		out.close();
+22: 		System.out.println(BufferedInputFile.read(newfilename));
+23: 	}
+24: 
+25: }
