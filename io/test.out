@@ -19,9 +19,9 @@ public class Redirecting {
 		while((s = br.readLine()) != null) {
 			System.out.println(s);
 		}
-		System.out.println("hello");
+		System.out.print("hello");
 		out.close();
 		System.setOut(console);
 	}
 }
-
+hello
