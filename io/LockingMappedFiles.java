@@ -1,11 +1,7 @@
 package io;
 import java.nio.*;
 import java.nio.channels.*;
-
-import javax.management.RuntimeErrorException;
-
 import java.io.*;
-
 
 public class LockingMappedFiles {
 	static final int LENGTH = 0x500000;
