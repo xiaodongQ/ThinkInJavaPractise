@@ -24,5 +24,4 @@ public class EnumClass {
 			print(shrub);
 		}
 	}
-
 }
